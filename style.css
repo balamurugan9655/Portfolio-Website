@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Side navbar styling */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #343a40;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+#sidebar.hidden {
+  transform: translateX(-100%);
+}
+#content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+}
+@media (max-width: 767.98px) {
+  #sidebar {
+    transform: translateX(-100%);
+  }
+  #content {
+    margin-left: 0;
+  }
+  #sidebar.active {
+    transform: translateX(0);
+  }
+}
+
+/* text-styling */
+.color-style {
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.textColor-style {
+  background: linear-gradient(120deg,red,orange,yellow,green,blue,indigo,violet);
+  width: fit-content;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textColorChenge-style {
+  background: linear-gradient(120deg,red,orange,yellow,green,blue,indigo,violet,indigo,blue,green,yellow,orange,red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500%;
+  animation-name: chengeColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes chengeColor {
+  0% { background-position: 0%; }
+  50% { background-position: 50%;}
+  100% { background-position: 100%;}
+}
+
+/* wave text animation */
+/*.wave-text {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.wave-text span{
+  animation-name: waveText;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes waveText {
+  0% , 100% { transform: translateY(0);}
+  50% { transform: translateY(-20px);}
+}*/
+
+/* Custom Tooltip Colors */
+/* .tooltip-custom .tooltip-inner {
+  background-color: var(--tooltip-bg-color, #c50ec5); 
+  color: var(--tooltip-text-color, #fff); 
+  font-size: 14px;
+  font-weight: bold;
+} */
+
+.tooltip-custom .tooltip-arrow {
+  border-top-color: var(--tooltip-bg-color, #343a40);
+}
+
+.bg-img {
+    background-image: url(image/bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 607px;
+    width: 100%;
+}
+.icon-link>a {
+  text-decoration: none;
+}
+.icon-link>a:hover {
+  transform: scale(1.1);
+}
+.icon-link a:nth-child(1):hover button {
+  color: #075E54;
+}
+.icon-link a:nth-child(2):hover button {
+  color: #d62976;
+}
+.icon-link a:nth-child(3):hover button {
+  color: #FF0000;
+}
+.icon-link a:nth-child(4):hover button {
+  color: black;
+}
+
+
+.skills-section {
+  background-color: #f8f9fa;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skill-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* .vr {
+  border-left: 5px solid navy; Thickness and color
+} */
+
+.sidebar {
+  height: 100vh;
+  background-color: #212529;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 250px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+}
+
+.sidebar a:hover {
+  color: #0dcaf0;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.contact-details i {
+  color: #0dcaf0;
+  margin-right: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+}
+
+.map-container {
+  margin-top: 20px;
+}

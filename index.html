@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- scroll effect animation link -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  <!-- Side navbar -->
+  <nav id="sidebar" class="bg-dark">
+    <div class="text-center p-4 pb-0">
+      <img src="image/bala-img.jpg" width="120" height="120" class="rounded-circle p-2" alt="Profile Picture">
+      <h4 class="">Balamurugan</h4>
+    </div>
+    <div class="p-2 d-flex justify-content-center icon-link">
+      <a href="https://wa.me/9360737264?text=Hello%21%20This%20is%20a%20test%20message." target="_blank">
+        <button type="button" id="whatsappButton" class="btn btn-secondary rounded-circle p-1 m-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp m-1" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg>
+        </button>        
+      </a>
+      <a href="https://www.instagram.com/balabala891/" target="_blank">
+        <button type="button" class="btn btn-secondary rounded-circle p-1 m-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram m-1" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+        </button>        
+      </a>
+      <a href="https://www.youtube.com/@BalaMurugan-nu6cu" target="_blank">
+        <button type="button" class="btn btn-secondary rounded-circle p-1 m-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="youtube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube m-1" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+          </svg>
+        </button>        
+      </a>
+      <a href="https://github.com/balamurugan9655" target="_blank">
+        <button type="button" class="btn btn-secondary rounded-circle p-1 m-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="github">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github m-1" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </button>        
+      </a>
+    </div>
+    <ul class="list-group list-group-flush mt-4 fw-bold">
+      <a href="#home" class="text-decoration-none p-3 bg-dark list-group-item list-group-item-action text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house align-bottom mb-1 me-1" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+        </svg>
+        Home
+      </a>
+      <a href="#about" class="text-decoration-none p-3 bg-dark list-group-item list-group-item-action text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person align-bottom mb-1 me-1" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg>
+        About
+      </a>
+      <a href="#skills" class="text-decoration-none p-3 bg-dark list-group-item list-group-item-action text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task align-bottom mb-1 me-1" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
+          <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+          <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
+        </svg>
+        Skills
+      </a>
+      <a href="#project" class="text-decoration-none p-3 bg-dark list-group-item list-group-item-action text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-richtext align-bottom mb-1 me-1" viewBox="0 0 16 16">
+          <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+          <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+          <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+        </svg>
+        Project
+      </a>
+      <a href="#contact" class="text-decoration-none p-3 bg-dark list-group-item list-group-item-action text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope align-bottom mb-1 me-1" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+        Contact
+      </a>
+      <li class="text-decoration-none p-3 bg-dark list-group-item text-white"></li>
+    </ul>
+  </nav>
+
+  <!-- Page Content -->
+  <main id="content">
+    <!-- navbar sm devices icon -->
+    <nav class="navbar navbar-light d-block position-fixed top-0 end-0 d-md-none">
+      <div class="container">
+        <button class="btn btn-primary d-md-none ms-auto rounded-4" id="sidebarToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-white" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- home page 1 -->
+    <div class="container-fluid text-white w-100 bg-img d-flex flex-column justify-content-center p-5" id="home">
+      <h1 class="w-100 element-tittle">BALAMURUGAN S</h1>
+      <h4 class="w-100"> I'm <span class="color-style textColorChenge-style" id="text-animation"></span></h4>
+    </div>
+    <!-- about -->
+    <div id="about" class="p-4">
+      <h1 class="pt-4 pb-3 element-tittle">About</h1>
+      <p class="element-contant">I am a motivated and dedicated Full Stack Web Developer with a passion for building functional, responsive, and visually appealing web applications. As a fresher in the field, I bring a strong foundation in both front-end and back-end development, a keen eye for design, and an eagerness to learn and grow. My goal is to create efficient, user-centric solutions that deliver exceptional user experiences while continuously improving my skills in modern web technologies</p>
+      <div class="pt-3">
+        <div class="row about-part">
+          <!-- First Column: Image -->
+          <div class="col-md-4 text-center">
+            <img src="image/bala-org.png" width="100%" height="100%" class="img-fluid rounded" alt="Description of image">
+          </div>
+          
+          <!-- Second Column: Content -->
+          <div class="col-md-8">
+            <h2 class="mb-4 element-subtittle">Web Developer</h2>
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+            </p> -->
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-group list-unstyled">
+                  <li class="list-group-item"><strong>Birthday : </strong> 6 Feb 2001</li>
+                  <li class="list-group-item"><strong>Phone : </strong> +91 93607 37264</li>
+                  <li class="list-group-item"><strong>Github : </strong> <a href="https://github.com/balamurugan9655" class="text-decoration-none" target="_blank">github.com/balamurugan9655</a></li>
+                  <li class="list-group-item"><strong>City : </strong> Namakkal,Tamil Nadu.</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group list-unstyled">
+                  <li class="list-group-item"><strong>Age : </strong> 24</li>
+                  <li class="list-group-item"><strong>Email : </strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shanmugambala80@gmail.com&su=Subject%20Goes%20Here&body=Write%20your%20message%20here" class="text-decoration-none" target="_blank"> shanmugambala80@gmail.com</a></li>
+                  <li class="list-group-item"><strong>Degree : </strong> <abbr title="Diploma in Electrical and Electronics Engineering (DEEE)">DEEE</abbr></li>
+                  <li class="list-group-item"><strong>Languages : </strong> Tamil , English</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="skills-section p-4" id="skills">
+      <div class="container">
+        <h1 class="pt-4 pb-3 element-tittle">Skills</h1>
+        <div class="row skill-part">
+          <!-- Front-end Skills -->
+          <div class="col-md-6 ps-0 ps-md-4">
+            <h4 class="mb-4">Front-end Skills</h4>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"></div>
+              <span>Bootstrap</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+              <span>React JS</span>
+            </div>
+          </div>
+          <!-- Back-end Skills -->
+          <div class="col-md-6 ps-0 ps-md-4 pt-4 pt-md-0 pt-lg-0">
+            <h4 class="mb-4">Back-end Skills</h4>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></div>
+              <span>MongoDB</span>
+            </div>
+            <!-- <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server"></div>
+              <span>SQL Server</span>
+            </div>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"></div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card mb-3">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js"></div>
+              <span>Express.js</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div id="project" class="p-4">
+      <h1 class="p-4 element-tittle">Projects</h1>
+      <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2 container element-part">
+            <!-- project-1 -->
+            <div class="col mb-3">
+              <div class="card h-100">
+                <img src="image/image.png" class="card-img-top img-fluid rounded" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold text-primary p-2">Food Delivery Website</h5>
+                  <p class="card-text">Designed and developed a fully responsive food delivery website, ensuring compatibility across all devices and screen sizes.Created an intuitive user interface to deliver a seamless and enjoyable browsing experience for customers. Incorporated essential features like advanced search, detailed restaurant listings, menu browsing, and order customization for user convenience.</p>
+                  <p class="card-text text-primary p-2 ps-0 mt-auto"><strong class="text-black"> Technology’s : </strong> <span> HTML5 </span> 
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span> <span> CSS3</span> </p>
+                  <div class="text-center m-3 ">
+                    <a href="https://github.com/balamurugan9655/FoodDeliveryWebsite.git" class="btn btn-outline-primary" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                      Source Code </a>
+                    <a href="https://balamurugan9655.github.io/FoodDeliveryWebsite/" class="btn btn-outline-primary" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                      </svg>
+                      Live Link </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project-2 -->
+            <div class="col mb-3">
+              <div class="card h-100">
+                <img src="image/Furniture-Website-image.png" class="card-img-top img-fluid rounded" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold text-primary p-2">Furniture Shop Website</h5>
+                  <p class="card-text">The website leverages Bootstrap's grid system to ensure a seamless user experience across devices, providing responsive layouts for desktops, tablets, and mobile devices.Pre-designed Bootstrap elements like modals, carousels, and buttons create a modern, intuitive, and visually appealing interface for showcasing furniture collections.Built on Bootstrap's framework, the website allows easy customization and scalability, enabling the addition of features like product filtering, dynamic search, and customer reviews.</p>
+                  <p class="card-text text-primary p-2 ps-0 mt-auto"><strong class="text-black"> Technology’s : </strong> 
+                    <span> HTML5 </span> 
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span> 
+                    <span> CSS3 </span> 
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span>
+                    <span> JavaScript </span>
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span>
+                    <span>Bootstrap</span>
+                   </p>
+                  <div class="text-center m-3">
+                    <a href="https://github.com/balamurugan9655/Furniture-Website.git" class="btn btn-outline-primary" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                      Source Code </a>
+                    <a href="https://balamurugan9655.github.io/Furniture-Website/index.html" class="btn btn-outline-primary" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                      </svg>
+                      Live Link </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project-3 -->
+            <div class="col mb-3">
+              <div class="card h-100">
+                <img src="image/Online_Education-Website-image.png" class="card-img-top img-fluid rounded" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center fw-bold text-primary p-2">Online Education Website</h5>
+                  <p class="card-text">Developed an interactive coding education platform, increasing user engagement by 100% through clear tutorials and hands-on coding exercises. Implemented practical coding challenges and collaborative forums, enhancing user learning and interaction by 100% through real-time feedback and peer collaboration.</p>
+                  <p class="card-text text-primary mt-auto p-2 ps-0"><strong class="text-black"> Technology’s : </strong> 
+                    <span> HTML5 </span> 
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span> 
+                    <span> CSS3 </span> 
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span>
+                    <span> JavaScript </span>
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span>
+                    <span> Bootstrap </span>
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span>
+                    <span> React JS </span>
+                  </p>
+                  <div class="text-center m-3 mt-auto">
+                    <a href="https://github.com/balamurugan9655/onlineeducation.git" class="btn btn-outline-primary" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                      Source Code </a>
+                    <a href="https://balamurugan9655.github.io/onlineeducation/" class="btn btn-outline-primary" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                      </svg>
+                      Live Link </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project-4 -->
+            <!-- <div class="col mb-3">
+              <div class="card">
+                <img src="image/image.png" class="card-img-top img-fluid rounded" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bold text-primary p-2">Food Delivery Website</h5>
+                  <p class="card-text">Designed and developed a fully responsive food delivery website, ensuring compatibility across all devices and screen sizes.Created an intuitive user interface to deliver a seamless and enjoyable browsing experience for customers. Incorporated essential features like advanced search, detailed restaurant listings, menu browsing, and order customization for user convenience.</p>
+                  <p class="card-text text-primary p-2 ps-0"><strong class="text-black"> Technology’s : </strong> <span> HTML5 </span> 
+                    <span class="fs-5 fw-bold text-black"> 
+                      &#x007c;
+                    </span> <span> CSS3</span> </p>
+                  <div class="text-center m-3 mt-auto">
+                    <a href="#" class="btn btn-outline-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                      Source Code </a>
+                    <a href="#" class="btn btn-outline-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg mb-1 text-black" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                      </svg>
+                      Live Link </a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!--  -->
+          </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact" class="p-4">
+      <h1 class="p-4 element-tittle">Contact</h1>
+      <div class="container-fluid">
+        <div class="row container">
+          <div class="col-md-3 d-none d-md-block d-lg-block"></div>
+          <div class="col-md-5 ">
+            <h3 class="m-3 text-center element-contant">Send a Message</h3>
+            <form class="contact-form element-part">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" oninput="sendMessage()" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" oninput="sendMessage()" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Write your message" oninput="sendMessage()" required></textarea>
+                </div>
+                <button id="submitButton" type="submit" class="btn btn-outline-primary d-flex ms-auto element-button" onclick="buttonClicked()" disabled> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-fill mt-1 me-1" viewBox="0 0 16 16">
+                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+                  </svg>
+                  Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center p-4 bg-primary-subtle">
+    <h6> &#169; 2024 copyright all right reserved </h6>
+  </footer>
+  
+<script src="script.js"></script>
+
+</body>
+</html> 
