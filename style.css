@@ -33,6 +33,10 @@
   }
 }
 
+.h-nav a:hover svg  {
+  color: blue;
+}
+
 /* text-styling */
 .color-style {
   border-right: 2px solid black;
@@ -68,44 +72,19 @@
   100% { background-position: 100%;}
 }
 
-/* wave text animation */
-/*.wave-text {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 5px;
-}
-.wave-text span{
-  animation-name: waveText;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes waveText {
-  0% , 100% { transform: translateY(0);}
-  50% { transform: translateY(-20px);}
-}*/
-
-/* Custom Tooltip Colors */
-/* .tooltip-custom .tooltip-inner {
-  background-color: var(--tooltip-bg-color, #c50ec5); 
-  color: var(--tooltip-text-color, #fff); 
-  font-size: 14px;
-  font-weight: bold;
-} */
-
+/* tooltip css */
 .tooltip-custom .tooltip-arrow {
   border-top-color: var(--tooltip-bg-color, #343a40);
 }
 
 .bg-img {
-    background-image: url(image/bg-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 607px;
-    width: 100%;
+  background-image: url(image/bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 607px;
+  width: 100%;
 }
+/* nav icon hover style */
 .icon-link>a {
   text-decoration: none;
 }
@@ -125,11 +104,10 @@
   color: black;
 }
 
-
+/* skills section */
 .skills-section {
   background-color: #f8f9fa;
 }
-
 .skill-card {
   display: flex;
   align-items: center;
@@ -144,10 +122,6 @@
   width: 30px;
   height: 30px;
 }
-
-/* .vr {
-  border-left: 5px solid navy; Thickness and color
-} */
 
 .sidebar {
   height: 100vh;

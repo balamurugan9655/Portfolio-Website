@@ -35,32 +35,6 @@ function typeText()
 setInterval(typeText,1500);
 
 
-//wave text animation
-/* function waveTextFunction(TextContant,containerPath)
-{
-  const text = TextContant;
-  const container = document.getElementById(containerPath);
-  text.split("").forEach((char,index) => {
-    const span = document.createElement("span");
-    container.appendChild(span);
-    span.textContent = char;
-    span.style.animationName = "waveText";
-    span.style.animationDuration = `${1.5}s`;
-    span.style.animationDelay = `${index * 0.1}s`;
-  });
-}
-const TextContant ="About";
-const containerPath = "WaveText-about";
-waveTextFunction(TextContant,containerPath);*/
-
-//whatsapp message code
-/*document.getElementById('whatsappButton').addEventListener('click', function () {
-  const phoneNumber = "9360737264";
-  const message = "Hello! This is a test message.";
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  window.open(whatsappURL, "_blank");
-});*/
-
 //contact code
 function sendMessage()
 {
