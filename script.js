@@ -45,7 +45,7 @@ function sendMessage()
 
   if((name.value.trim() !== "")&&(email.value.trim() !== "")&&(message.value.trim() !== ""))
   {
-    submitButton.disabled = false
+    submitButton.disabled = false;
   }
   else
   {
@@ -59,6 +59,63 @@ function buttonClicked()
   const name = document.getElementById("name").value;
   alert(`Thanks For Your Message ${name}`);
 };
+
+//download button animation with progressbar animation
+const downloadButton = document.getElementById("downloadButton");
+const buttonText = document.getElementById("buttonText");
+const icon = document.getElementById("icon");
+const progressBar = document.getElementById("progressBar");
+
+downloadButton.addEventListener("click", () => {
+  // Change icon to downward arrow when clicked
+  icon.classList.remove("bi-download");
+  icon.classList.add("bi-arrow-down");
+  icon.classList.add("downloading"); // Start the animation
+
+  // Start download process
+  buttonText.textContent = "Downloading...";
+  progressBar.style.width = "0%";
+  //progressBar.style.backgroundColor = "rgba(37, 169, 209, 0.3)";
+  progressBar.classList.add("bg-primary");
+
+  let progress = 0;
+
+  // Simulate progress bar
+  const interval = setInterval(() => {
+    progress += 10;
+    progressBar.style.width = `${progress}%`;
+
+    if (progress >= 100) {
+      clearInterval(interval);
+
+      // Show success state
+      buttonText.textContent = "Complete!";
+      icon.classList.remove("downloading");
+      icon.classList.add("bi-check-circle-fill");
+      icon.classList.add("success");
+      //progressBar.style.backgroundColor = "rgba(40, 167, 69, 0.5)"; // Green background for success
+      progressBar.classList.add("text-success")
+
+      // Start the file download after 2 seconds
+      setTimeout(() => {
+        // Create an anchor element to trigger the file download
+        const downloadLink = document.createElement("a");
+        downloadLink.href = "./S Balamurugan Resume .pdf";
+        downloadLink.download = "Balamurugan Resume.pdf";
+        downloadLink.click();
+
+        // Reset after 2 seconds
+        buttonText.textContent = "Download Resume";
+        icon.classList.remove("bi-check-circle", "success");
+        icon.classList.add("bi-download");
+        progressBar.style.width = "0%";
+        //progressBar.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+        progressBar.classList.add("text-white")
+      }, 2000);
+    }
+  }, 250); // Update progress every 300ms
+});
+
 
 // SCROLL REVEAL ANIMATION Initialize ScrollReveal
 const sr = ScrollReveal({
