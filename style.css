@@ -21,6 +21,7 @@
   margin-left: 250px;
   transition: margin-left 0.3s ease-in-out;
 }
+/* sm devices */
 @media (max-width: 767.98px) {
   #sidebar {
     transform: translateX(-100%);
@@ -33,13 +34,9 @@
   }
 }
 
-.h-nav a:hover svg  {
-  color: blue;
-}
-
-/* text-styling */
+/* typing text style animation  with rainbow color auto chenge*/
 .color-style {
-  border-right: 2px solid black;
+  border-right: 2px solid white;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -84,7 +81,13 @@
   height: 607px;
   width: 100%;
 }
-/* nav icon hover style */
+
+/* side nav a tag hover svgcolor chenge */
+.h-nav a:hover svg  {
+  color: blue;
+}
+
+/* nav social media icon hover style */
 .icon-link>a {
   text-decoration: none;
 }
@@ -143,6 +146,7 @@
   color: #0dcaf0;
 }
 
+/* contact section */
 .content {
   margin-left: 270px;
   padding: 20px;

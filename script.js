@@ -1,3 +1,4 @@
+// sm devices menu button toggle code
 const sidebar = document.getElementById("sidebar");
 const sidebarToggle = document.getElementById("sidebarToggle");
 
@@ -54,6 +55,7 @@ function sendMessage()
 
 }
 
+// contact sumbit button clicked alert message view
 function buttonClicked()
 {
   const name = document.getElementById("name").value;
@@ -113,9 +115,8 @@ downloadButton.addEventListener("click", () => {
         progressBar.classList.add("text-white")
       }, 2000);
     }
-  }, 250); // Update progress every 300ms
+  }, 250); // Update progressbar every 250ms  
 });
-
 
 // SCROLL REVEAL ANIMATION Initialize ScrollReveal
 const sr = ScrollReveal({
