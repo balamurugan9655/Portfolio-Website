@@ -102,8 +102,8 @@ downloadButton.addEventListener("click", () => {
       setTimeout(() => {
         // Create an anchor element to trigger the file download
         const downloadLink = document.createElement("a");
-        downloadLink.href = "./S Balamurugan Resume .pdf";
-        downloadLink.download = "Balamurugan Resume.pdf";
+        downloadLink.href = "./Balamurugan S.pdf";
+        downloadLink.download = "Balamurugan S.pdf";
         downloadLink.click();
 
         // Reset after 2 seconds
